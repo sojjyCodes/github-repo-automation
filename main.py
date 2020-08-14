@@ -2,7 +2,7 @@ import os
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 driver.get('https://github.com/login')
 
 print ("Opening Github")
