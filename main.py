@@ -23,16 +23,18 @@ login_box = driver.find_element_by_xpath('//*[@id="login"]/form/div[4]/input[9]'
 login_box.click()
 time.sleep(1)
 
-#verify = webdriver.Chrome() 
-#verify.get('https://gmail.com')
-#print("Login to get your verification code")
+'''
+verify = webdriver.Chrome() 
+verify.get('https://gmail.com')
+print("Login to get your verification code")
 
-#ver_code = input("Enter your verification code: ") 
-#code = driver.find_element_by_id('otp')
-#code.send_keys(ver_code)
+ver_code = input("Enter your verification code: ")    
+code = driver.find_element_by_id('otp')
+code.send_keys(ver_code)
 
-#button = driver.find_element_by_xpath('//*[@id="login"]/div[3]/form/button')
-#button.click()
+button = driver.find_element_by_xpath('//*[@id="login"]/div[3]/form/button')
+button.click()'''
+# Note - You might need to uncomment the above if github prompt you to verify.
 
 new_repo = driver.get('https://github.com/new')
 
@@ -44,6 +46,5 @@ repo.send_keys(repo_name)
 time.sleep(1)
 
 print("Repository has been initialized sucessfully😎️🤑️ ")
-
 create_repo = driver.find_element_by_xpath('//*[@id="new_repository"]/div[4]/button')
 create_repo.click()
