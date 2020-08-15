@@ -33,7 +33,8 @@ code = driver.find_element_by_id('otp')
 code.send_keys(ver_code)
 
 button = driver.find_element_by_xpath('//*[@id="login"]/div[3]/form/button')
-button.click()'''
+button.click()
+'''
 # Note - You might need to uncomment the above if github prompt you to verify.
 
 new_repo = driver.get('https://github.com/new')
